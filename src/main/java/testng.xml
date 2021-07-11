@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="MySuite" verbose="1">
+	<parameter name="user" value="John Doe"></parameter>
+	<parameter name="pwd" value="ThisIsNotAPassword"></parameter>
+
+	<test name="Testing">
+		<classes>
+			<class name="testng.Annotations" />
+			<class name="testng.MyTestClass" />
+		</classes>
+	</test>
+</suite>
